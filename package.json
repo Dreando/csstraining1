@@ -1,0 +1,25 @@
+{
+  "name": "csstraining1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass -rw sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreando/csstraining1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dreando/csstraining1/issues"
+  },
+  "homepage": "https://github.com/Dreando/csstraining1#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
