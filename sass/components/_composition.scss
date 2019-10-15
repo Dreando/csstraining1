@@ -1,0 +1,40 @@
+@import "../abstracts/variables";
+
+.composition {
+
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    box-shadow: $box-shadow-light;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 1rem;
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &:hover {
+      transform: scale(1.25);
+      box-shadow: $box-shadow-dark;
+      z-index: 11;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.9);
+  }
+}
